@@ -1,0 +1,13 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Hell's Gate National Park'
+theme = 'Hellsgate'
+
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[context.production.environment]
+  HUGO_VERSION = "0.133"  # Replace with your Hugo version
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"

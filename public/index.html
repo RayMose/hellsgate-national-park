@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.133.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/main.min.aa772e3a412ddd1c01d49e6b0558c9e051cf7b6606b647fe28130fff93e0e6c7.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="/" class="logo">Hell's Gate National Park</a>
+    </div>
+    <button class="navbar-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="navbar-menu">
+      <ul class="navbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#visitor-info">Visitor Info</a></li>
+        <li><a href="#footer-subscribe" class="cta-button">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+    <main>
+        
+  
+<section class="hero">
+  <div class="hero-slideshow">
+    <div class="slide" style="background-image: url('/images/img10.jpg');"></div>
+    <div class="slide" style="background-image: url('/images/img2.jpg');"></div>
+    <div class="slide" style="background-image: url('/images/img9.jpg');"></div>
+  </div>
+  <div class="hero-content">
+    <h1>Explore the Wild Beauty of Hell's Gate National Park</h1>
+    <p>Discover breathtaking landscapes and unforgettable adventures</p>
+    <a href="#footer-subscribe" class="cta-button">Book Now</a>
+  </div>
+</section>
+  <section id="about" class="about-map-section">
+  <div class="container">
+    <h2 class="section-title">Explore Our Park</h2>
+    <div class="about-map-content">
+      <div class="about-content">
+        <h3 class="subsection-title">Discover Hell's Gate</h3>
+        <div class="about-scroll">
+          <p class="lead">Nestled in the heart of Kenya's Great Rift Valley, Hell's Gate National Park is a testament to the raw beauty of nature.</p>
+          <img src="/images/img3.jpg" alt="Hell's Gate landscape" class="about-image">
+          
+          <p>Named for its intense geothermal activity, this park offers a unique blend of dramatic landscapes, diverse wildlife, and thrilling adventures. From towering cliffs and deep gorges to open savannah and bubbling hot springs, Hell's Gate is a microcosm of Kenya's natural wonders.</p>
+          <img src="/images/img4.jpg" alt="Geothermal activity in Hell's Gate" class="about-image">
+          
+          <ul class="feature-list">
+            <li>Spectacular rock formations including Fischer's Tower and Central Tower</li>
+            <li>Home to over 100 species of birds, including the rare Lammergeier vulture</li>
+            <li>One of the few national parks where walking, cycling, and rock climbing are permitted</li>
+          </ul>
+          <img src="/images/img5.jpg" alt="Activities in Hell's Gate" class="about-image">
+          
+          <p>Experience the thrill of walking among wildlife, cycle through breathtaking gorges, or test your climbing skills on ancient volcanic plugs. Hell's Gate National Park offers an adventure like no other in Kenya.</p>
+          <img src="/images/img6.jpg" alt="Wildlife in Hell's Gate" class="about-image">
+        </div>
+      </div>
+      <div class="map-content">
+        <div id="park-map"></div>
+        <div class="map-legend">
+          <h4>Key Locations</h4>
+          <ul>
+            <li><span class="legend-icon hiking"></span> Hiking Trails</li>
+            <li><span class="legend-icon climbing"></span> Rock Climbing Spots</li>
+            <li><span class="legend-icon geothermal"></span> Geothermal Areas</li>
+            <li><span class="legend-icon wildlife"></span> Wildlife Viewing Points</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="activities" class="activities-section">
+    <div class="container">
+      <h2 class="section-title">Explore Our Activities</h2>
+      <div class="activities-grid">
+        <div class="activity-card">
+          <img src="/images/img4.jpg" alt="Hiking in Hell's Gate" class="activity-image">
+          <div class="activity-content">
+            <h3>Hiking</h3>
+            <p>Explore scenic trails and witness breathtaking landscapes on foot.</p>
+            <a href="#subscribe" class="activity-link">Learn More</a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img src="/images/bike.jpg" alt="Cycling in Hell's Gate" class="activity-image">
+          <div class="activity-content">
+            <h3>Cycling</h3>
+            <p>Pedal through the park's diverse terrain and enjoy the freedom of two wheels.</p>
+            <a href="#subscribe" class="activity-link">Learn More</a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img src="/images/img4.jpg" alt="Rock Climbing in Hell's Gate" class="activity-image">
+          <div class="activity-content">
+            <h3>Rock Climbing</h3>
+            <p>Challenge yourself on the park's iconic rock formations and cliffs.</p>
+            <a href="#subscribe" class="activity-link">Learn More</a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img src="/images/wildlife.jpg" alt="Wildlife Viewing in Hell's Gate" class="activity-image">
+          <div class="activity-content">
+            <h3>Wildlife Viewing</h3>
+            <p>Observe diverse wildlife in their natural habitat, including rare bird species.</p>
+            <a href="#subscribe" class="activity-link">Learn More</a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img src="/images/img2.jpg" alt="Geothermal Spa in Hell's Gate" class="activity-image">
+          <div class="activity-content">
+            <h3>Geothermal Spa</h3>
+            <p>Relax and rejuvenate in natural hot springs amidst stunning scenery.</p>
+            <a href="#subscribe" class="activity-link">Learn More</a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img src="/images/Gorge.jpeg" alt="Camping in Hell's Gate" class="activity-image">
+          <div class="activity-content">
+            <h3>Camping</h3>
+            <p>Immerse yourself in nature with an overnight stay under the stars.</p>
+            <a href="#subscribe" class="activity-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="visitor-info" class="visitor-info-section">
+    <div class="container">
+      <h2 class="section-title">Visitor Information</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <i class="fas fa-clock"></i>
+          <h3>Park Hours</h3>
+          <p>Open daily from 6:00 AM to 6:00 PM</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-ticket-alt"></i>
+          <h3>Entrance Fees</h3>
+          <ul>
+            <li>Adults: $25</li>
+            <li>Children (3-18): $15</li>
+            <li>Kenyan Residents: 300 KSH</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-car"></i>
+          <h3>Getting Here</h3>
+          <p>Located 100 km northwest of Nairobi. Accessible by car or organized tour.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-campground"></i>
+          <h3>Accommodation</h3>
+          <p>Camping sites available. Nearby lodges and hotels in Naivasha town.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-cloud-sun"></i>
+          <h3>Best Time to Visit</h3>
+          <p>Year-round, but dry seasons (Jan-Mar and Jul-Oct) are most comfortable.</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-info-circle"></i>
+          <h3>Safety Tips</h3>
+          <ul>
+            <li>Stay on designated trails</li>
+            <li>Carry plenty of water</li>
+            <li>Respect wildlife - maintain distance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="booking-cta">
+        <h3>Ready to Experience Hell's Gate?</h3>
+        <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <span>+254 20 2664071</span>
+        </div>
+        <p>Book your visit now and prepare for an unforgettable adventure!</p>
+        <a href="#footer-subscribe" class="cta-button">Book Now</a>
+        <div class="social-links">
+          <h4>Follow #Hell's Gate</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/kenyawildlifeservice" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/kwskenya" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kenyawildlifeservice/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tripadvisor.com/Attraction_Review-g317067-d472320-Reviews-Hell_s_Gate_National_Park-Naivasha_Rift_Valley_Province.html#/media/472320/?albumid=-160&type=ALL_INCLUDING_RESTRICTED&category=-160" target="_blank" rel="noopener noreferrer"><i class="fab fa-tripadvisor"></i></a>
+            <a href="https://www.kws.go.ke/content/hells-gate-national-park" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    </main>
+    <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@hellsgatepark.com</p>
+        <p>Phone: +254 20 123 4567</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/activities">Activities</a></li>
+          <li><a href="/visitor-info">Visitor Info</a></li>
+        </ul>
+      </div>
+      <div id="footer-subscribe" class="footer-section">
+        <h3>Stay Connected</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Hell's Gate National Park. All rights reserved.</p>
+    </div>
+  </footer>
+    
+    <script src="http://localhost:1313/js/main.min.ca8211ae73da0e1caa6c1e82974392b361636e408d5e6467202e67d247ca474f.js"></script>
+</body>
+</html>

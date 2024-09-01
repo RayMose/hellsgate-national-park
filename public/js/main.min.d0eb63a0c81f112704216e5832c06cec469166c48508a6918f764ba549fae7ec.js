@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".navbar-toggle"),t=document.querySelector(".navbar-menu");e.addEventListener("click",()=>{e.classList.toggle("is-active"),t.classList.toggle("is-active")})})
