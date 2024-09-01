@@ -1,23 +1,14 @@
-baseURL = '/'
-languageCode = 'en-US'
-title = 'My New Hugo Site'
+baseURL = "http://hellsgate.co.ke/"
+languageCode = "en-us'"
+title = "Hell's Gate National Park"
+theme = "Hellsgate"
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
+[context.production.environment]
+  HUGO_VERSION = "0.133.1"  # Replace with your Hugo version
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
 
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
-
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
