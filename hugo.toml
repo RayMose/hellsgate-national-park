@@ -11,3 +11,6 @@ theme = "Hellsgate"
   HUGO_VERSION = "0.133.1"  # Replace with your Hugo version
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+
+
+  
