@@ -1,7 +1,7 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'Hell's Gate National Park'
-theme = 'Hellsgate'
+baseURL = "http://hellsgate.co.ke/"
+languageCode = "en-us'"
+title = "Hell's Gate National Park"
+theme = "Hellsgate"
 
 [build]
   publish = "public"
