@@ -1,7 +1,7 @@
 baseURL = "http://hellsgate.co.ke/"
 languageCode = "en-us'"
 title = "Hell's Gate National Park"
-theme = "Hellsgate"
+theme = "hellsgate"
 
 [build]
   publish = "public"
