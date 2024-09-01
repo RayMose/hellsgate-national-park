@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: 'false'
+          submodules: false
           fetch-depth: 0
 
       - name: Setup Hugo
