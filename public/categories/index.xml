@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hell&#39;s Gate National Park</title>
-    <link>http://hellsgate.co.ke/categories/</link>
+    <link>https://hellsgate.co.ke/categories/</link>
     <description>Recent content in Categories on Hell&#39;s Gate National Park</description>
     <generator>Hugo</generator>
     <language>en-us&#39;</language>
-    <atom:link href="http://hellsgate.co.ke/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hellsgate.co.ke/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
