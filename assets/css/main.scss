@@ -51,21 +51,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1000;
   background-color: $primary-color;
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
-
-  .cta-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    color: red; // Red text color
-    text-decoration: none;
-    border: 2px solid red;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: red;
-      color: white; // White text on hover
-    }
   }
 
   //navigation
@@ -85,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
     
     &-menu {
       display: flex;
+      align-items: center;
     }
     
     &-nav {
@@ -106,10 +92,42 @@ h1, h2, h3, h4, h5, h6 {
         }
       }
     }
+
+    .cta-button {
+      margin-left: 1rem;
+    } 
     
     &-toggle {
       display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      
+      span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: $secondary-color;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+      }
     }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      color: red; // Red text color
+      text-decoration: none;
+      border: 2px solid red;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: red;
+        color: white; // White text on hover
+      }
+
   }
 }
 
@@ -686,48 +704,67 @@ p {
 @media (max-width: $breakpoint-mobile) {
   .navbar {
     flex-wrap: wrap;
+
+    &-brand {
+      flex: 1;
+    }
     
+    &-toggle {
+      display: block;
+      order: 2;
+    }
+
     &-menu {
-      display: none;
+      position: fixed;
+      top: 60px; // Adjust this value based on your header height
+      left: 0;
       width: 100%;
+      background-color: $primary-color;
+      display: none;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
       
       &.is-active {
-        display: block;
+        display: flex;
       }
     }
     
     &-nav {
       flex-direction: column;
+      align-items: center;
+      width: 100%;
       
       li {
-        margin: 0.5rem 0;
+        margin: 1rem 0;
+        
+        a {
+          font-size: 1.2rem;
+        }
       }
     }
     
+    cta-button {
+      margin: 1rem 0 0 0;
+      width: 100%;
+      text-align: center;
+    }
+
     &-toggle {
       display: block;
-      background: none;
-      border: none;
-      cursor: pointer;
-      
-      span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: $secondary-color;
-        margin: 5px 0;
-        transition: all 0.3s ease;
-      }
+      z-index: 1000;
       
       &.is-active {
-        span:nth-child(1) {
-          transform: rotate(-45deg) translate(-5px, 6px);
-        }
-        span:nth-child(2) {
-          opacity: 0;
-        }
-        span:nth-child(3) {
-          transform: rotate(45deg) translate(-5px, -6px);
+        span {
+          &:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+          }
         }
       }
     }
