@@ -8,6 +8,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.querySelector('.booking-form');
+  form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var formData = new FormData(form);
+      fetch('/process_form.php', {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+          alert(data); // Show success or error message
+          if (data.includes("Thank You")) {
+              form.reset(); // Clear the form on success
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          alert('An error occurred. Please try again later.');
+      });
+  });
+});
+
   document.addEventListener('DOMContentLoaded', function() {
     // Initialize map
     var map = L.map('park-map').setView([-0.9, 36.3], 13);
