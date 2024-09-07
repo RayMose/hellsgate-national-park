@@ -136,6 +136,8 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
   position: relative;
   height: 100vh;
+  max-height: 600px;
+  min-height: 400px;
   overflow: hidden;
   
   &-slideshow {
@@ -772,14 +774,30 @@ p {
   }
 
   .hero {
+    height: 70vh;
+    max-height: 500px;
+
     &-content {
+      padding: 1rem;
+
       h1 {
         font-size: 2rem;
       }
       
       p {
         font-size: 1rem;
+        margin-bottom: 1rem;
       }
+    }
+
+    .cta-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    //optimize background for mobile
+    .slide {
+      background-position: center center;
     }
   }
 
@@ -790,6 +808,23 @@ p {
     
     .footer-section {
       margin-bottom: 2rem;
+    }
+  }
+}
+
+// Further optimization for very small screens
+@media (max-width: 480px) {
+  .hero {
+    max-height: 400px;
+
+    &-content {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
     }
   }
 }

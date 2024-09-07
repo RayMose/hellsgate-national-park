@@ -63,19 +63,26 @@
         </ul>
       </div>
       <div id="footer-subscribe" class="footer-section">
-        <h3>Stay Connected</h3>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
+        <h3>Book Your Adventure</h3>
+        <form action="/process_form.php" method="POST" class="booking-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <select name="activity" required>
+            <option value="">Select Activity</option>
+            <option value="guiding">Guiding Services</option>
+            <option value="biking">Bike Hiring</option>
+            <option value="camping">Camping</option>
+            <option value="car">Car Hiring</option>
+          </select>
+          <button type="submit">Book Now</button>
         </form>
       </div>
-    </div>
     <div class="footer-bottom">
       <p>&copy; 2024 Hell's Gate National Park. All rights reserved.</p>
     </div>
   </footer>
     
     
-    <script src="/js/main.min.ca8211ae73da0e1caa6c1e82974392b361636e408d5e6467202e67d247ca474f.js"></script>
+    <script src="/js/main.min.2920940d129289877b713c36d3e8a4ecba727103400b6c5a68cc77ffc98f7e23.js"></script>
 </body>
 </html>
